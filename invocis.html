@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoices - Subscription Management System</title>
+    <link rel="stylesheet" href="All-Css/invoicis.css" />
+  </head>
+  <body>
+    <script src="ALL JS/invocis.js"></script>
+    <section id="invoices">
+      <div class="container">
+        <h2>Invoices</h2>
+        <div class="invoice-controls">
+          <button class="btn filter-btn">Filter Invoices</button>
+          <input
+            type="text"
+            id="search-invoice"
+            placeholder="Search by Invoice ID..."
+          />
+        </div>
+        <table class="invoice-table">
+          <thead>
+            <tr>
+              <th>Invoice ID</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#12345</td>
+              <td>2023-10-01</td>
+              <td>$19.99</td>
+              <td><span class="status paid">Paid</span></td>
+              <td><button class="btn download-btn">Download</button></td>
+            </tr>
+            <tr>
+              <td>#12346</td>
+              <td>2023-09-01</td>
+              <td>$9.99</td>
+              <td><span class="status paid">Paid</span></td>
+              <td><button class="btn download-btn">Download</button></td>
+            </tr>
+            <tr>
+              <td>#12347</td>
+              <td>2023-08-15</td>
+              <td>$49.99</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>
+                <button class="btn download-btn disabled">Download</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#12348</td>
+              <td>2023-07-20</td>
+              <td>$149.99</td>
+              <td><span class="status failed">Failed</span></td>
+              <td>
+                <button class="btn download-btn disabled">Download</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
